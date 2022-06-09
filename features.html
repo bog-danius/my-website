@@ -7,6 +7,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="shortcut icon" type="image/png" href="favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -24,6 +25,8 @@
         border-radius: 1em;
         text-align: center;
         padding: 0.5em;
+        transition: 0.5s;
+        background-color: #212529;
       }
       .card:hover {
         background-color: rgba(0, 0, 0, 0.2);
@@ -33,13 +36,21 @@
         width: 60%;
         margin: auto;
       }
+      .body {
+        padding: 0.5em;
+        display: flex;
+        justify-content: center;
+      }
+      .fon {
+        background-color: black;
+      }
     </style>
   </head>
-  <body>
+  <body class="fon">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
-          <img src="BURDIN.png" alt="BURDIN" width="90" />
+          <img src="./BURDIN.png" alt="BURDIN" width="90" />
         </a>
         <button
           class="navbar-toggler"
@@ -66,16 +77,24 @@
         </div>
       </div>
     </nav>
+    <div class="body">
+      <div class="card border-success mb-3" style="max-width: 20rem">
+        <div class="card-header" style="color: rgb(210, 205, 205)">
+          описание
+        </div>
+        <div class="card-body text-success">
+          <h5 class="card-title" style="color: rgb(210, 205, 205)">
+            работа с html
+          </h5>
+          <p class="card-text" style="color: rgb(210, 205, 205)">
+            сайт будет полностью сделан к концу июня
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="container my-3">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
         <div class="kol">
-          <div class="card border-success mb-3" style="max-width: 20rem">
-            <div class="card-header">описание</div>
-            <div class="card-body text-success">
-              <h5 class="card-title">работа с html</h5>
-              <p class="card-text">сайт будет полностью сделан к концу июня</p>
-            </div>
-          </div>
           <div class="card">
             <img
               src="img.jpg"
@@ -84,8 +103,10 @@
               height="250"
             />
             <div class="card-body">
-              <h5 class="card-title">Богдан</h5>
-              <p class="card-text">
+              <h5 class="card-title" style="color: rgb(210, 205, 205)">
+                Богдан
+              </h5>
+              <p class="card-text" style="color: rgb(210, 205, 205)">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
                 praesentium!
               </p>
@@ -101,11 +122,13 @@
               src="IMG_20191231_120424_009.jpg"
               class="card-img-top2"
               alt="фотка кота"
-              height="438"
+              height="250"
             />
             <div class="card-body">
-              <h5 class="card-title">Ричард</h5>
-              <p class="card-text">
+              <h5 class="card-title" style="color: rgb(210, 205, 205)">
+                Ричард
+              </h5>
+              <p class="card-text" style="color: rgb(210, 205, 205)">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Reprehenderit, quas?
               </p>
@@ -113,6 +136,27 @@
                 href="IMG_20191231_120424_009.jpg"
                 class="btn btn-primary"
                 target="_blank"
+                >подробнее...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <img
+              src="genia.jpg"
+              class="card-img-top2"
+              alt="фотка jenesius"
+              height="250"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="color: rgb(210, 205, 205)">
+                Евгений
+              </h5>
+              <p class="card-text" style="color: rgb(210, 205, 205)">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <a href="genia.jpg" class="btn btn-primary" target="_blank"
                 >подробнее...</a
               >
             </div>
