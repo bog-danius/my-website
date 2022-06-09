@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burdin</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .card {
+        border-radius: 1em;
+        text-align: center;
+        padding: 0.5em;
+      }
+      .card:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .card img {
+        border-radius: 50%;
+        width: 60%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="BURDIN.png" alt="BURDIN" width="90" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="features.html">Features</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-3">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="kol">
+          <div class="card border-success mb-3" style="max-width: 20rem">
+            <div class="card-header">описание</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">работа с html</h5>
+              <p class="card-text">сайт будет полностью сделан к концу июня</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="img.jpg"
+              class="card-img-top1"
+              alt="фотка BURDIN"
+              height="250"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Богдан</h5>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
+                praesentium!
+              </p>
+              <a href="img.jpg" class="btn btn-primary" target="_blank"
+                >подробнее...</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <img
+              src="IMG_20191231_120424_009.jpg"
+              class="card-img-top2"
+              alt="фотка кота"
+              height="438"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ричард</h5>
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Reprehenderit, quas?
+              </p>
+              <a
+                href="IMG_20191231_120424_009.jpg"
+                class="btn btn-primary"
+                target="_blank"
+                >подробнее...</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
