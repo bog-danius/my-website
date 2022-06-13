@@ -1,0 +1,20 @@
+.texts {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text_1 {
+  opacity: 5;
+}
+
+.text_2 {
+  opacity: 5;
+}
+.text_3 {
+  opacity: 5;
+}
