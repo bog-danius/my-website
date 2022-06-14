@@ -27,13 +27,14 @@
       .fon {
         background-image: url("Group 2.svg");
         background-color: black;
+        position:relative;
       }
       .indents {
         padding: 0.3em;
       }
       .btn{
         padding: 15 px 70 px;
-        background: #3399ff;
+        background: #32577a;
         border: none;
         display: block;
         border-radius: 5px;
@@ -42,14 +43,25 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         color: #fff;
-        box-shadow: 5px 5px 0px #0066cc;
+        box-shadow: 5px 5px 0px #182d43;
         transition: 0.2s;  
        padding-right: 10em;    
     }
     .btn:hover{
-        box-shadow: 0px 0px 0px #0080ff;
+        box-shadow: 0px 0px 0px #14293d;
         cursor: pointer;
         transform: translateX(5px) translateY(5px);
+    }
+    .block{
+      position: absolute;
+      top: 0;
+      right: 0;
+      
+    }
+    .block1{
+      position: absolute;
+      top: 230px;
+      left: 800px;
     }
     </style>
 
@@ -57,31 +69,31 @@
       <div>
         <h1 style="color: white" class="indents"><strong>Burdin_</strong></h1>
         <div>
-          <a href="index.html" class="btn btn-primary" class="btn">Home</a>
+          <a href="index.html" class="block" style="color: white;" >"Home</a>
             </div>
           </div>
           
           <div>
               <h2 style="color: rgb(210, 205, 205)">Напиши мне и мы чтонибудь придумаем</h2>
           </div>
- 
-            <nav class="navbar bg-light"  >
-                <form class="container-fluid" >
-                  <div class="input-group" >
-                    <span class="input-group-text" id="basic-addon1">@</span>
-                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" style="color:rgb(210, 205, 205) ;">
-                  </div>
-                </form>
-              </nav>
-              <nav class="navbar bg-light" >
-                <div class="container-fluid" >
-                  <form class="d-flex" role="search" >
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+          <div class="block1">
+            <nav class="navbar background-color"  >
+                  <form class="container-fluid" >
+                    <div class="input-group" >
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" style="color:rgb(210, 205, 205) ;">
+                    </div>
                   </form>
-                </div>
               </nav>
-        
+              <nav class="navbar background-color" >
+                  <div class="container-fluid" >
+                    <form class="d-flex" role="search"  >
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 150px; " >
+                      <button class="btn btn-outline-success1" type="submit">Search</button>
+                    </form>
+                  </div>
+              </nav>
+          </div>
     </body>
   </head>
 </html>
