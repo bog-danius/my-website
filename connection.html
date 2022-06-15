@@ -63,6 +63,12 @@
       top: 230px;
       left: 800px;
     }
+    label.error{
+      display: none !important
+    }
+    form input.error{
+      border-color:red;
+    }
     </style>
 
     <body class="fon">
@@ -77,22 +83,20 @@
               <h2 style="color: rgb(210, 205, 205)">Напиши мне и мы чтонибудь придумаем</h2>
           </div>
           <div class="block1">
-            <nav class="navbar background-color"  >
-                  <form class="container-fluid" >
-                    <div class="input-group" >
-                      <span class="input-group-text" id="basic-addon1">@</span>
-                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" style="color:rgb(210, 205, 205) ;">
-                    </div>
-                  </form>
-              </nav>
-              <nav class="navbar background-color" >
-                  <div class="container-fluid" >
-                    <form class="d-flex" role="search"  >
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 150px; " >
-                      <button class="btn btn-outline-success1" type="submit">Search</button>
-                    </form>
-                  </div>
-              </nav>
+          <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+              <input type="text" name="username" value=""/>
+
+            </div>
+            <div>
+              <textarea name="text" ></textarea>
+            </div>
+            <div> 
+
+                <button class="btn btn-outline-success1" type="submit">Search</button>
+                <div class="status"></div>
+            </div>
+          </form>
           </div>
     </body>
   </head>
