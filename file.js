@@ -25,12 +25,10 @@ jQuery(document).ready(function () {
         dataType: "html",
         data: form.serialize(),
         success: function (data) {
-          //form.html(data);
-          //form.css("opacity", "1");
           form.find(".status").html("форма отправлена успешно");
         },
         error: function () {
-          form.find(".status").html("серврная ошибка");
+          form.find(".status").html("сервeная ошибка");
         },
       });
     }
