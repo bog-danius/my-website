@@ -9,6 +9,6 @@ $subject = "Заявка с сайта";
 $msg ="
 Имя : $name /n
 Почта :$email /n
-mail($to , $subject , $msg , "From : $to");
+mail($to , $subject , $msg , "From : $from");
 ?>
 

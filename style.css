@@ -8,12 +8,15 @@
 }
 
 .text_1 {
-  opacity: 5;
+  opacity: 1;
 }
 
 .text_2 {
-  opacity: 5;
+  opacity: 1;
 }
 .text_3 {
-  opacity: 5;
+  opacity: 1;
+}
+.hide {
+  display: none;
 }
